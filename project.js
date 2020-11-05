@@ -3,8 +3,13 @@ var slug = window.location.href.split('project=')[1];
 if (slug) {
 	slug = "https://api.are.na/v2/channels/" + slug;
   $.getJSON(slug, function(data) {
-  	console.log(data)
 
+  	console.log(data)
+    var title = data.title.split('project ')[1];
+
+    var title = $("<h1></h1>").text(title);
+    $(title).addClass('project-title')
+    $('.project-container').append(title);
   	for (var i = data.contents.length - 1; i > 0; i--) {
   		//create block
     	var block = data.contents[i];

@@ -49,7 +49,7 @@ for (var i = projects.length - 1; i >= 0; i--) {
      var outer =$('<div></div>')
      outer.addClass('outer')
      imgurls.reverse()
-    for (var i = imgurls.length - 1; i >= 0; i--) {
+    for (var i = 0; i <= imgurls.length - 1; i++) {
       if(i < 3){
       var image = $('<div></div>');
       var holder =$('<div></div>')
