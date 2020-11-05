@@ -15,7 +15,34 @@
 		url("./fonts/CothamSans.otf") format("opentype"),
 		url("./fonts/CothamSans.ttf") format("truetype");
 }
-
+.pedagogy a{
+	line-height: 1;
+	display: block;
+	width: calc(100% - 80px);
+border:1px dotted #111;
+padding:5px;
+margin-left:20px;
+/*	text-decoration: underline;*/
+}
+.pedagogy .syllabi.label a span{
+	display: block;
+	font-size:24px;
+	margin-top:10px;
+	line-height: 1.2;
+}
+.pedagogy .syllabi.label{
+	cursor: alias;
+	font-size:40px;
+	display: block;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+.pedagogy a:hover{
+	filter:invert(1);
+}
+a:hover{
+	cursor:alias;
+}
 
 .selected, .label, .project-title{
 	font-family:"Cotham Sans", sans-serif;
@@ -493,6 +520,7 @@ padding-bottom:100px;
 		top:0;
 		bottom:0;
 		margin-left:0;
+		position: relative;
 	}
 	.block.image{
 		max-width: 100%;
@@ -505,6 +533,13 @@ padding-bottom:100px;
 		width: 80vw;
 		height:30vh;
 	}
+	.pedagogy .syllabi.label{
+	cursor: alias;
+	font-size:18px;
+	margin-left:0;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
 	.projects-grid .holder .project  .outer .img-wrapper .image-container{
 		width: 100%;
 		height:30vh;
@@ -606,6 +641,12 @@ padding-bottom:100px;
 	}
 	.block.media{
 		margin: 10px 0;
+	}
+	.pedagogy .syllabi.label a span{
+		display: block;
+		font-size:18px;
+		margin-top:8px;
+		line-height: 1.2;
 	}
 }
 @media(max-width:768px) and (max-height: 569px){
