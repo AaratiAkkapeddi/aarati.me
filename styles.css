@@ -59,10 +59,10 @@
     box-orient: horizontal;
     flex-direction: row;
 
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    justify-content: center;
+    -webkit-box-pack: flex-end;
+    -moz-box-pack: flex-end;
+    box-pack: flex-end;
+    justify-content: flex-end;
 
     -webkit-box-align: center;
     -moz-box-align: center;
@@ -198,9 +198,12 @@ ul.contact li{
 	text-align: right; 
 
 }
+.about a{
+	text-decoration: underline;
+}
 
 .project{
-	margin-bottom:150px;
+	margin-bottom:250px;
 	position: relative;
 }
 .holder:nth-child(3n+0){
@@ -223,7 +226,7 @@ ul.contact li{
 	top:-10vh;
 }
 .holder:nth-child(3n+1) .project .img-wrapper:nth-child(2) .image-container{
-	height: 70vh;
+	height: 60vh;
 	top:-20vh;
 
 }
@@ -238,7 +241,7 @@ ul.contact li{
 	top:-10vh;
 }
 .holder:nth-child(2n+1) .project .img-wrapper:nth-child(1) .image-container{
-	height: 70vh;
+	height: 60vh;
 	top:0vh;
 
 }
@@ -252,7 +255,7 @@ ul.contact li{
 	top:-10vh;
 }
  .project .img-wrapper:nth-child(3) .image-container{
-	height: 70vh;
+	height: 60vh;
 	top:0vh;
 
 }

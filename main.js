@@ -36,6 +36,12 @@ for (var i = projects.length - 1; i >= 0; i--) {
     var projectDiv = $('<a></a>');
     $(projectDiv).attr('href', "./project.html?project=" + data.slug)
     $(projectDiv).addClass('project');
+var title = data.title.split('project ')[1];
+    var titleSpan = $('<div></div>');
+   
+      $(titleSpan).addClass('label');
+    $(titleSpan).text(title);
+    $(projectDiv).append(titleSpan);
     var imgurls = []
     var text = []
     var titleImg = data.contents[0].image.original.url;
@@ -61,16 +67,13 @@ for (var i = projects.length - 1; i >= 0; i--) {
       }
     }
     $(projectDiv).append(outer)
-var title = data.title.split('project ')[1];
-    var titleSpan = $('<div></div>');
-    var image = $('<div></div>');
-      $(titleSpan).addClass('label');
-    $(titleSpan).text(title);
+
+     var image = $('<div></div>');
     var descrip = $('<div></div>');
     descrip.html(text[0])
 
     
-    $(projectDiv).append(titleSpan);
+    
     
 
     
