@@ -1,0 +1,142 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:courier;
+	background: black;
+	overflow: hidden;
+}
+#overlord{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	
+	z-index: 8;
+}
+#instructions{
+	color:white;
+	position: fixed;
+	display: block;
+	z-index: 9;
+	top:15px;
+	left:15px;
+}
+#overlord div{
+	width:100%;
+	border-top: 50px dashed black;
+}
+#zoetrope, #zoetrope2{
+	font-family: courier;
+	color:white;
+	font-size:40px;
+	white-space: nowrap;
+	margin-top:30%;
+	text-align: right;
+	display: block;
+	width:100%;
+}
+canvas{
+	background:black;
+	position: absolute;
+	z-index: -1;
+	top:-50px;
+	left:0;
+	width:100vw;
+  height: 400vh;
+}
+button{
+	background: black;
+	width:100px;
+	height:50px;
+	font-family: courier;
+	color:gray;
+	border:none;
+	outline:none;
+	cursor: pointer;
+}
+#date-range{
+	font-family: courier;
+	color:black;
+	text-align: left;
+	background: white;
+}
+.fixed{
+	position: fixed;
+	top:0;
+	left:0;
+	padding:10px;
+}
+button:hover{
+	opacity: 0.8;
+}
+.container{
+	max-width:1280px;
+	display: block;
+	margin:0 auto;
+	text-align: left;
+	margin-top:100px;
+}
+#date{
+	display: none;
+	background: white;
+}
+#description{
+	background: white;
+	display: none;
+}
+#visuals{
+	display: block;
+	text-align: center;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+#smiley{
+	background: yellow;
+	border-radius:500px;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	animation: rotate 10s infinite linear;
+}
+
+.eye{
+	width:8px;
+	height:8px;
+	background: black;
+	border-radius:40px;
+	display: inline-block;
+	margin-top:90px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.smile{
+	width: 20px;
+  height: 10px;
+  background-color: rgba(0,0,0,0);
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  border: 4px solid black;
+  border-top: 0;
+  display: block;
+  margin:0 auto;
+  margin-top:15px;
+}
+.smile.not-smiling{
+    border-radius: 0;
+    border-left: none;
+    border: none;
+    border-bottom: 4px solid black;
+}
+
+@-webkit-keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+@-moz-keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+@-o-keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+@keyframes rotate{
+  100% { transform: rotate(360deg); }
+}

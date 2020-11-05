@@ -1,0 +1,48 @@
+body{
+	font-family:Arial, sans-serif;
+}
+.form{
+	margin: 25px;
+	text-align: center;
+	margin-top:3rem;
+}
+input{
+	font-size: 24px;
+	padding: 5px;
+	border: 1px solid black;
+}
+button{
+	background: black;
+	color:white;
+	font-size:24px;
+	padding: 5px 10px;
+	border-radius: 0;
+	cursor: pointer;
+}
+.qr-area{
+	text-align: center;
+	display: none;
+	margin: 50px;
+}
+.qr-area img{
+	margin:0 auto;
+}
+.download{
+	text-align: center;
+}
+.download a{
+	display: none;
+	background: black;
+	color:white;
+	font-size:24px;
+	padding: 5px 10px;
+	border-radius: 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+.on .qr-area{
+	display: block;
+}
+.on a{
+	display: inline-block;
+}

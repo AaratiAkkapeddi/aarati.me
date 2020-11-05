@@ -1,0 +1,173 @@
+body{
+	background: #969696;
+/*	background: #1D1D1B;*/
+	color:whitesmoke;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+*{
+	transition: 0.5s;
+}
+canvas{
+	width: 4000px;
+	height: 4000px;
+	display: block;
+	/*background: lightpink;*/
+}
+canvas:nth-child(even){
+	background: orange;
+}
+p{
+	font-size: 120px;
+	width: 80%;
+	text-transform: lowercase;
+	padding-bottom:50px;
+	letter-spacing: 0.3rem;
+	margin-top: 90px;
+
+
+}
+.map{
+
+	border:1px solid black;
+}
+.tooltip{
+	position:fixed;
+	top:0;
+	right:0;
+	font-size: 70px;
+	opacity:0;
+	width: 25%;
+	z-index: 9999;
+	height: 40vh;
+	transition: 0.5s;
+}
+.tooltip.open{
+	display: block;
+	opacity: 1;
+}
+svg{
+	display: none;
+	position: fixed;
+	bottom:50px;
+	z-index: 9;
+	opacity: 0.9;
+	left: 0px;
+	width: 200px;
+	height:200px;
+}
+.map-inner{
+	width:calc(25% );
+/*	border: 1px solid whitesmoke;*/
+	display: inline-block;
+	float:left;
+	height:40vh;
+	margin: 10px;
+		background: #969696;
+	/*background: #1D1D1B;*/
+	cursor: pointer;
+}
+.map-inner:nth-child(even){
+	margin-top:-50px;
+}
+.map-inner:nth-child(odd){
+	margin-top:50px;
+	margin-left:-50px;
+}
+
+#map0, #map1, #map2, #map3, #map4, #map5{
+	width: calc(100% - 30px);
+	overflow: hidden;
+
+	padding: 10px;
+	display: block;
+	position: relative;
+
+/*	border: 1px solid whitesmoke;*/
+	margin:50px 0;
+}
+.blur-div{
+	left:-50%;
+	top: -20vh;
+	border-radius:100%;
+	width: 100%;
+	box-shadow: 40px 30px 40px #969696 inset, -40px -30px 40px #969696 inset;
+	height: 40vh;
+}
+.time-label{
+	background: #969696;
+	position: absolute;
+	z-index: 999;
+	white-space: nowrap;
+}
+.about{
+	font-size: 18px;
+	position: fixed;
+	bottom:40px;
+	right:40px;
+	z-index:9999999;
+
+}
+.map-inner > div{
+	background: rgba(0,0,0,0) !important;
+
+
+}
+
+.blur{
+  transition:0.5s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  opacity: 0.5;
+
+}
+.title{
+/*	position: absolute;*/
+	vertical-align: top;
+	display: block;
+	margin-left:10px;
+	top:0;
+	font-size: 18px;
+	letter-spacing: 0.3rem;
+	font-family: 'Bai Jamjuree', sans-serif;
+	left:0;
+	padding: 0 5px;
+	z-index: 9999;
+}
+
+.map-control {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+
+        margin: 10px;
+        padding-right: 5px;
+        /* Hide the control initially, to prevent it from appearing
+           before the map loads. */
+        display: none;
+      }
+.gmnoprint{
+	display: none;
+}
+/*
+
+.gm-style div:nth-child(2){
+	display: none;
+
+}*/
+.map-inner{
+
+	border-radius: 100%;
+	/*box-shadow: 20px 20px 20px rgba(0,0,0,0.7) inset, -20px -20px 20px rgba(0,0,0,0.7) inset ;*/
+}
+
+.gm-style-pbc, .gm-style-cc, .gm-style-cc button, .gm-style a{
+	display: none !important;
+}
+
+.map-inner > .gm-style div:first-child div:first-child div:last-child{
+	display: none !important;
+	border-radius: 100%;
+
+    box-shadow: 20px 20px 20px green inset, -20px -20px 20px green inset ;
+
+}

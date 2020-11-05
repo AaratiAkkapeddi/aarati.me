@@ -1,0 +1,4 @@
+ var someNumber : float;
+ someNumber = .5;
+ animation.Play("walk");
+ animation["walk"].speed = someNumber;

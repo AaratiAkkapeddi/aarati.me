@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" fill="#FFFFFF">
+            <path d="M148.5,39.5 L148.5,261.5" id="Line" stroke="#FFFFFF" stroke-linecap="round" transform="translate(148.500000, 150.500000) scale(1, -1) translate(-148.500000, -150.500000) "></path>
+            <path id="Line-decoration-1" d="M145.5,250.7 L148.5,261.5 L151.5,250.7" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <path d="M148.5,39.5 L148.5,261.5" id="Line" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <path id="Line-decoration-1" d="M145.5,250.7 L148.5,261.5 L151.5,250.7" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <path d="M37.5,150.5 L259.5,150.5" id="Line" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <path id="Line-decoration-1" d="M248.7,153.5 L259.5,150.5 L248.7,147.5" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <path d="M259.5,150.5 L37.5,150.5" id="Line" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <path id="Line-decoration-1" d="M48.3,147.5 L37.5,150.5 L48.3,153.5" stroke="#FFFFFF" stroke-linecap="round"></path>
+            <text id="N" font-family="BorgenBold, Borgen" font-size="14" font-weight="bold">
+                <tspan x="144.283" y="29">N</tspan>
+            </text>
+            <text id="E" font-family="BorgenBold, Borgen" font-size="14" font-weight="bold">
+                <tspan x="267.283" y="154">E</tspan>
+            </text>
+            <text id="W" font-family="BorgenBold, Borgen" font-size="14" font-weight="bold">
+                <tspan x="23.283" y="154">W</tspan>
+            </text>
+            <text id="S" font-family="BorgenBold, Borgen" font-size="14" font-weight="bold">
+                <tspan x="145.283" y="279">S</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
