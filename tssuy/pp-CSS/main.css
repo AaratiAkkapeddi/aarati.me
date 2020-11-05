@@ -1,0 +1,448 @@
+
+
+.clickit:hover .square, .clickit:hover .circle{
+  background:black;
+}
+.clickit:hover .triangle{
+   border-color: transparent transparent black transparent;
+}
+
+/* ANIMATION TRIANGLE */
+
+@-webkit-keyframes triangle {
+  0% {
+     transform:translate3d(0,0, 0);
+  }
+  50% {
+     transform:translate3d(0,0, 0);
+  }
+  75%{
+      transform:translate3d(30%, 30%, 0);
+  }
+  100% {
+   transform:translate3d(0,0, 0);
+  }
+}
+
+
+/* ANIMATION CIRCLE */
+
+@-webkit-keyframes circle {
+  0% {
+       transform:translate3d(245%, 35%, 0);
+  }
+  25%{
+       transform:translate3d(80%, 295%, 0);
+  }
+  50% {
+       transform:translate3d(80%, 295%, 0);
+  }
+  75%{
+         transform:translate3d(115%, 0, 0);
+  }
+  100% {
+    transform:translate3d(245%, 35%, 0);
+  }
+}
+
+
+/* ANIMATION SQUARE */
+
+@-webkit-keyframes square {
+  0% {
+       transform:translate3d(125%, 110%, 0);
+  }
+  50% {
+ transform:translate3d(125%, 110%, 0);
+  }
+  75%{
+transform:translate3d(5%, 80%, 0);
+  }
+  100% {
+     transform:translate3d(125%, 110%, 0);
+    
+  }
+}
+
+
+
+
+.clickit .triangle {
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-style: solid;
+  transition:.2s;
+
+/*   top: 50px;
+  left: 10px; */
+  border-width: 0 25.5px 42px 25.5px;
+  border-color: transparent transparent blue transparent;
+  animation:triangle 5s ease-in-out 0s infinite;
+  -webkit-animation:triangle 5s ease-in-out 0s infinite;
+  -moz-animation:triangle 5s  ease-in-out  0s infinite;
+  -o-animation:triangle 5s  ease-in-out  0s infinite;
+  -ms-animation:triangle 5s  ease-in-out  0s infinite;
+}
+
+.clickit .circle {
+  background: red;
+  height: 15px;
+  width: 15px;
+/*   top: 57px;
+  left: 46px; */
+   
+  position: absolute;
+  float: left;
+  border-radius: 50%;
+  animation:circle 5s  ease-in-out 0s infinite;
+  -webkit-animation:circle 5s  ease-in-out 0s infinite;
+  -o-animation:circle 5s  ease-in-out 0s infinite;
+  -moz-animation:circle 5s linear 0s infinite;
+  -ms-animation:circle 5s  ease-in-out 0s infinite;
+  transition:.2s;
+}
+
+.clickit .square {
+  background: yellow;
+  height: 25px;
+  float: left;
+  width: 25px;
+  transition:.2s;
+    
+/*   left: 45px;
+  top: 80px; */
+  position: absolute;
+  animation:square 5s  ease-in-out 0s infinite;
+  -webkit-animation:square 5s  ease-in-out 0s infinite;
+  -o-animation:square 5s  ease-in-out 0s infinite;
+  -moz-animation:square 5s  ease-in-out 0s infinite;
+  -ms-animation:square 5s  ease-in-out 0s infinite;
+  
+}
+
+
+
+
+body {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right:20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 45px;
+  color: black;
+  line-height: 210%;
+  letter-spacing: 0.05em;
+  padding-bottom: 40px;
+
+}
+.banner{
+  margin-top:300px;
+  float:left;
+  position:fixed;
+}
+/*.sea{
+  margin-top:33px;
+  float:left;
+  font-size:.5em;
+  position:absolute;
+}*/
+/*.yacht{
+  font-size:10px;
+  letter-spacing: 2px;
+  line-height:1.4em;
+  margin-top:-20px;
+}*/
+
+/*.boat{
+float:left;
+
+ }
+
+ .boat {
+  -webkit-animation: rock-boat 3s ease-in-out infinite;
+}
+.boat::after {
+  -webkit-animation: steam 4s 2s infinite;
+}
+*/
+
+
+/*  Keyframes - WebKit only
+------------------------------------------ */
+
+@-webkit-keyframes rock-boat {
+  50%  { -webkit-transform: rotate(-5deg) translateY(-10px); }
+}
+
+@-webkit-keyframes steam {
+  40%,
+  60%  { opacity: .8; }
+  100% { -webkit-transform: translate(-15%, -35%) rotateZ(20deg); }
+}
+
+
+
+/*  boat sliding
+------------------------------------------ */
+/*
+  .boats {
+    float:left;
+-webkit-animation: boats 40.025s 10 ease;
+-moz-animation:  boats 40.025s 10 ease;
+-o-animation: boats 40.025s 10 ease;
+}
+@-webkit-keyframes boats {
+from {-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+ }
+to {-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+ }
+}
+@-moz-keyframes boats {
+from {-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-10ppx) ;
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+ }
+to {-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+ }
+}
+@-o-keyframes boats {
+from {-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px) ;
+ }
+to {-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(810px) ;
+ }
+}
+*/
+/***************************
+**********THIS IS STUFF ABOUT THE IMAGE API**************
+***************************/
+
+
+/*#instaImage{
+width:500px;
+margin-left:50px;
+}*/
+/*
+@media only screen and (max-width: 480px) {
+  #instaImage{
+    margin-left:0;
+  }
+  .pads{
+    font-size:1.3em;
+    line-height:2.5em;
+  }
+}
+  @media only screen and (max-width: 960px) {
+  #instaImage{
+    margin-left:0;
+  }
+
+
+  }
+    @media only screen and (max-width: 1024px) {
+  #instaImage{
+    margin-left:20%;
+  }
+
+
+  }*/
+#results{
+  opacity:1;
+  z-index:-2;
+  float:left;
+  position:absolute;
+  margin-left: 100px;
+  margin-top:10px;
+
+}
+
+#results img{
+  width:300px;
+  opacity: 0;
+}
+.item-template{
+  display:none;
+}
+
+.pads {
+    background-color:none;
+    display: block;
+    margin:0 auto;
+    padding-left: 8%;
+    padding-top: 8%;
+
+}
+
+
+#poem span{
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+/***************************
+**********THIS IS STUFF ABOUT THE ABOUT SECTION AND QUESTION MARK BUTTON**************
+***************************/
+a:link {
+  color:inherit;
+}
+
+a:active {
+  color:inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color:inherit;
+}
+a:visited{
+  color:inherit;
+  text-decoration: none;
+}
+
+.sidebar {
+  margin-left: 40px;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.boldIt {
+  color: yellow;
+}
+.clickit {
+  float: left;
+  position: absolute;
+  z-index: 2;
+  font-size: .8em;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  font-size:1.2em;
+  color: #00FF7F;
+  text-decoration: none;
+}
+
+/***************************
+**********ANIMATING THE BUTTON**************
+***************************/
+/*
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}*/
+.clickit{
+    top:2%;
+    left:0%;
+    -webkit-animation-delay: 8s; /* Chrome, Safari, Opera */
+    animation-delay: 8s;
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: .8s;
+    -moz-animation-iteration-count: 4;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: .8s;
+    -ms-animation-iteration-count: 4;
+    -ms-animation-timing-function:linear;
+}
+
+
+
+
+
+.descrip {
+  display: block;
+  background: blue;
+  float:left;
+     margin-top: 4%;
+    margin-left: 8%;
+    height:25px;
+transition:1s;
+-webkit-transition:1s;
+-moz-transition:1s;
+-ms-transition:1s;
+-o-transition:1s;
+  position: absolute;
+  color:white;
+  z-index: 1;
+width:0;
+overflow: hidden;
+
+}
+.descrip .about{
+  font-size:16px;
+  line-height: 1.5em;
+  width: 100%;
+  text-align: left;
+  margin-left:0;
+}
+
+.sidebar{
+  position:fixed;
+  left:0;
+  top:0;
+  margin-left:25px;
+}
+
+@media(max-width:992px){
+  body{
+    font-size:18px;
+    padding:0;
+  }
+ .pads {
+    width: 84%;
+    margin: 0;
+    /* margin: 0 auto; */
+    margin-top: 50px;
+    font-size: 21px;
+}
+  .clickit {
+    
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-left:0;
+    color: #00FF7F;
+    text-decoration: none;
+  }
+ 
+ .sidebar{
+    margin-left:0;
+    top:0;
+    right:0;
+  }
+  .sidebar .descrip{
+        margin-top: 80px;
+    margin-left: 0;
+    height: 100px;
+  }
+}
