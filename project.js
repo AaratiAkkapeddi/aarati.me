@@ -10,7 +10,7 @@ if (slug) {
     var title = $("<h1></h1>").text(title);
     $(title).addClass('project-title')
     $('.project-container').append(title);
-  	for (var i = data.contents.length - 1; i > 0; i--) {
+  	for (var i = data.contents.length - 1; i > 2; i--) {
   		//create block
     	var block = data.contents[i];
       var blockDiv = $('<div></div>');
