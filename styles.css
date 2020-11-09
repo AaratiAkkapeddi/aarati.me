@@ -15,6 +15,24 @@
 		url("./fonts/CothamSans.otf") format("opentype"),
 		url("./fonts/CothamSans.ttf") format("truetype");
 }
+/*.global-wrapper, nav, .about, .about.pedagogy{
+	max-width: 2800px;
+	margin-left:auto;
+	margin-right:auto;
+}*/
+.pedagogy.about{
+	font-size:18px;
+	column-count:2;
+
+	overflow: scroll;
+	padding-bottom:40px;
+}
+.pedagogy.global-wrapper{
+	margin-top:95vh;
+}
+.pedagogy.about strong{
+	display: inline-block;
+}
 .pedagogy a{
 	line-height: 1;
 	display: block;
@@ -30,12 +48,16 @@ margin-left:20px;
 	margin-top:10px;
 	line-height: 1.2;
 }
+.pedagogy .syllabi.label a{
+	background: whitesmoke;
+	color:#111;
+	display: inline-block;
+}
 .pedagogy .syllabi.label{
 	cursor: alias;
 	font-size:40px;
 	display: block;
-	max-width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 .pedagogy a:hover{
 	filter:invert(1);
@@ -392,6 +414,11 @@ filter: grayscale(0%) contrast(100%);
 }
 .project-container > *:last-child{
 padding-bottom:100px;
+margin-bottom:0;
+}
+.project-container > *:last-child.block.text{
+padding-bottom:100px;
+margin-bottom:0;
 }
 .project-container .project-title{
 	color:whitesmoke;
@@ -488,7 +515,14 @@ padding-bottom:100px;
 	/* filter: grayscale(100%) brightness(124%) contrast(132%); */
 	opacity:0.9;
 }
-
+@media(min-width: 1900px){
+	.global-wrapper{
+		margin-top:60vh;
+	}
+	.pedagogy.global-wrapper{
+		margin-top:70vh;
+	}
+}
 @media(max-width: 1280px){
 	.global-wrapper{
 		margin-top:80vh;
@@ -514,6 +548,17 @@ padding-bottom:100px;
 		margin-left:0;
 		margin-right:0;
 		margin-top:70vh;
+	}
+	.pedagogy a{
+		width: calc(100% - 20px);
+		margin-left:0;
+	}
+
+	.pedagogy.global-wrapper{
+		margin-top:20px;
+	}
+	.about{
+		padding:40px 10px;
 	}
 	.project-container .project-title{
 		font-size:50px;
@@ -644,7 +689,7 @@ padding-bottom:100px;
 	}
 	.pedagogy .syllabi.label a span{
 		display: block;
-		font-size:18px;
+		font-size:12px;
 		margin-top:8px;
 		line-height: 1.2;
 	}
