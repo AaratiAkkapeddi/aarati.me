@@ -33,7 +33,7 @@
 .pedagogy.about strong{
 	display: inline-block;
 }
-.pedagogy a{
+.pedagogy .project a{
 	line-height: 1;
 	display: block;
 	width: calc(100% - 80px);
@@ -547,7 +547,7 @@ margin-bottom:0;
 	.global-wrapper{
 		margin-left:0;
 		margin-right:0;
-		margin-top:70vh;
+		margin-top:60vh;
 	}
 	.pedagogy a{
 		width: calc(100% - 20px);
@@ -699,6 +699,6 @@ margin-bottom:0;
 		font-size:16px;
 	}
 	.global-wrapper{
-		margin-top:90vh;
+		margin-top:80vh;
 	}
 }
