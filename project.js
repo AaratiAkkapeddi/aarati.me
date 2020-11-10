@@ -1,7 +1,7 @@
 var slug = window.location.href.split('project=')[1];
 
 if (slug) {
-	slug = "https://api.are.na/v2/channels/" + slug;
+	slug = "https://api.are.na/v2/channels/" + slug+"?per=100";
   $.getJSON(slug, function(data) {
 
   	console.log(data)
@@ -25,6 +25,7 @@ if (slug) {
     	if (block.class == "Text") {
       //handle text "Image", "Text", "Link", "Media", or "Attachment"
 	      blockDiv.addClass('text');
+        console.log('text')
 	      blockDiv.html(block.content)
 
        } else if (block.class == "Image"){
