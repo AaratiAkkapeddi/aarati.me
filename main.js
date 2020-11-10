@@ -18,7 +18,10 @@ var projects = [
     "project-encoding", 
     "project-kolam",
     "project-after-image-risograph-prints", 
-    "project-after-image"
+    "project-after-image",
+    "project-recollections-in-paper",
+    "project-recollections-in-haldi-light",
+    "project-ancestral-apparitions"
     ]
 
 
