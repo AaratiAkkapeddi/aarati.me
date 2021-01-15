@@ -81,6 +81,8 @@ border-radius:0;
   background:black;
   color: whitesmoke;
   border-radius:0;
+padding: 3.5px 5px;
+border:none;
 }
 .pedagogy .syllabi.label a span{
 	display: block;
