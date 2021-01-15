@@ -15,6 +15,17 @@
 		url("./fonts/CothamSans.otf") format("opentype"),
 		url("./fonts/CothamSans.ttf") format("truetype");
 }
+::-webkit-input-placeholder { /* Edge */
+  color: black;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
 /*.global-wrapper, nav, .about, .about.pedagogy{
 	max-width: 2800px;
 	margin-left:auto;
@@ -66,6 +77,7 @@ border-radius:0;
 }
 .contact form input[type="submit" i] {
   outline:none;
+  box-shadow:none;
   background:black;
   color: whitesmoke;
   border-radius:0;
