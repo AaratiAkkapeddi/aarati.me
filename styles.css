@@ -747,6 +747,10 @@ margin-right:0;
 	.contact form input[type="submit" i] {
   margin-top:10px;
 }
+	.contact form input[type="text" i] {
+     font-size:16px;
+     text-align:right;
+}
 }
 @media(max-width:768px) and (max-height: 569px){
 	.about{
