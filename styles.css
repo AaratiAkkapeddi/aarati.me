@@ -20,6 +20,7 @@
 	margin-left:auto;
 	margin-right:auto;
 }*/
+
 .pedagogy.about{
 	font-size:18px;
 	column-count:2;
@@ -46,6 +47,9 @@ margin-left:20px;
 	font-size:20px;
 	line-height:1;
 	
+}
+.contact form label{
+ margin-right:10px;
 }
 .contact form p, .contact form input{
    margin:0;
@@ -695,6 +699,14 @@ margin-bottom:0;
 	ul.contact li{
 		font-size: 16px;
 	}
+.contact form{
+	font-size:16px;
+	line-height:1;
+	
+}
+	.contact form label{
+margin-right:0;
+}
 	.project .label{
 		font-size: 18px;
 	}
