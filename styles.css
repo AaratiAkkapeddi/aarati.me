@@ -42,6 +42,21 @@ padding:5px;
 margin-left:20px;
 /*	text-decoration: underline;*/
 }
+.contact form{
+	font-size:20px;
+	line-height:1;
+	
+}
+.contact form p, .contact form input{
+   margin:0;
+   display:inline-block;
+}
+.contact form input[type="submit" i] {
+  outline:none;
+  background:black;
+  color: whitesmoke;
+  border-radius:0;
+}
 .pedagogy .syllabi.label a span{
 	display: block;
 	font-size:24px;
