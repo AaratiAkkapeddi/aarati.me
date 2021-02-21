@@ -21,7 +21,8 @@ var projects = [
     "project-after-image",
     "project-recollections-in-paper",
     "project-recollections-in-haldi-light",
-    "project-ancestral-apparitions"
+    "project-ancestral-apparitions",
+    "project-after-goya"
     ]
 
 
