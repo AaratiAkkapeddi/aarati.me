@@ -1,10 +1,4 @@
 var projects = [
-    // "project-autosurfer3",
-    // "project-autosurfer2",
-    // "project-autosurfer1",
-    // "project-you-are-what-you-search",
-    // "project-match",  
-    // "project-seelevel",
     "project-mapping-hindu-iconography-in-paintings", 
     // "project-analyzing-american-political-apologies",
     // "project-walkways", 
