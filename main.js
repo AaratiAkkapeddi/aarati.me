@@ -41,11 +41,13 @@ var title = data.title.split('project ')[1];
     $(titleSpan).text(title);
     $(projectDiv).append(titleSpan);
     var imgurls = []
+    var imgAlts = []
     var text = []
     var titleImg = data.contents[0].image.original.url;
     for (var i = data.contents.length - 1; i >= 0; i--) {
       if(data.contents[i].image){
         imgurls.push(data.contents[i].image.original.url)
+         imgAlts.push(data.contents[i].title)
       }else{
         text.push(data.contents[i].content)
       }
@@ -60,6 +62,10 @@ var title = data.title.split('project ')[1];
       holder.addClass('img-wrapper');
       $(image).addClass('image-container');
       $(image).css('background-image', "url(" + imgurls[i] + ")");
+      var ariaSpan = $('<span></span>');
+      $(ariaSpan).attr("role","img");
+      $(ariaSpan).attr("aria-label",imgAlts[i]);
+      $(holder).append(ariaSpan);
       $(holder).append(image)
       $(outer).append(holder)
       }
