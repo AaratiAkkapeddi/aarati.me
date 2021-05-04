@@ -33,6 +33,7 @@ if (slug) {
           var image = $('<img></img>');
           $(image).attr('src', block.image.original.url);
           $(image).attr('alt', block.title);
+	       console.log(block);
           // debugger
           blockDiv.append(image)
         } else if (block.class == "Link"){
