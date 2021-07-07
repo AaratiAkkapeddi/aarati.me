@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aarati</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a class='nav' href='./index.html'>home</a>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<article><img class='me' aria-label="I am hugging my dog, Papaya" src='./assets/me.png'/><br><h1></h1></article>
+	<script type="text/javascript">
+		const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Faarati.substack.com%2Ffeed`;
+
+			
+
+		$.ajax(RSS_URL, {
+		  accepts: {
+		    xml: "application/rss+xml"
+		  },
+
+		  dataType: "jsonp",
+
+		  success: function(data) {
+		  	console.log(data.items)
+		    $(data.items).each(function() {
+		        const el = $(this);
+		        console.log(this)
+		        const template = `
+		          <article>
+		            <h2>
+		              <a href="${this.link}" target="_blank" rel="noopener">
+		                ${this.title}
+		              </a>
+		            </h2>
+		            <p>${this.content}</p>
+		          </article>
+		        `;
+
+		        document.body.insertAdjacentHTML("beforeend", template);
+		      });
+		  }
+		});
+	</script>
+</body>
+</html>
