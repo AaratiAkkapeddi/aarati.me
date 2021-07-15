@@ -36,6 +36,7 @@ body{
 }
 .sub-nav h3{
 	text-align:center;
+	color:whitesmoke;
 }
 .sub-nav ul li{
 	text-align:center;
@@ -275,7 +276,11 @@ article figcaption{
 	text-align:center;
 }
 article * {
+	
 	color:whitesmoke;
+}
+article a{
+	word-break: break-all;
 }
 #blog-header{
 	display: inline-block;
@@ -283,8 +288,36 @@ article * {
 	font-size:24px;
 	vertical-align: middle;
 	margin: 15px;
+
 }
 @media(max-width: 768px){
+	article{
+		max-width: calc(100vw - 40px);
+		margin:0 ;
+		margin-left:10px;
+		padding: 5px;
+	}
+	.sub-nav{
+		display: none;
+	}
+	img.me{
+		display: none;
+	}
+	article#main{
+		margin:0;
+		width: 100%;
+	}
+	#blog-header{
+		display: block;
+		width: 100%;
+		font-size:24px;
+		vertical-align: middle;
+		margin: 0;
+		margin-top:40px;
+		padding-bottom:15px;
+		margin-bottom:15px;
+   		border-bottom: 1px dotted whitesmoke;
+	}
 	body{
 		font-size:14px;
 	}
