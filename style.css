@@ -288,7 +288,10 @@ article a{
 	font-size:24px;
 	vertical-align: middle;
 	margin: 15px;
-
+   
+}
+article#main{
+	border-bottom:1px dotted white;
 }
 @media(max-width: 768px){
 	article{
@@ -306,6 +309,7 @@ article a{
 	article#main{
 		margin:0;
 		width: 100%;
+		border:none;
 	}
 	#blog-header{
 		display: block;
