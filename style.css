@@ -20,6 +20,7 @@ body{
 	font-size:14px;
 	width: 150px;
 	padding:15px;
+	padding-right:0;
 	border:1px solid;
 	max-height: calc(70vh - 70px);
 	overflow: scroll;
@@ -291,7 +292,7 @@ article a{
    
 }
 article#main{
-	border-bottom:1px dotted white;
+/*	border-bottom:1px dotted white;*/
 }
 @media(max-width: 768px){
 	article{
@@ -320,7 +321,7 @@ article#main{
 		margin-top:40px;
 		padding-bottom:15px;
 		margin-bottom:15px;
-   		border-bottom: 1px dotted whitesmoke;
+/*   		border-bottom: 1px dotted whitesmoke;*/
 	}
 	body{
 		font-size:14px;

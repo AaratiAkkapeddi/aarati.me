@@ -40,11 +40,14 @@
 		        li.append(navLink);
 		        blogNav.append(li);
 		        const template = `
+		          <hr>
 		          <article id="${this.title.split(" ").join("-")}">
 		            <h2>
 		              <a href="${this.link}" target="_blank" rel="noopener">
+		              <span style="text-align:left;margin-top:5px;margin-bottom:10px; border:1px solid;display:inline-block;padding:5px;" class="image-caption">${this.pubDate.split(" ")[0]}</span><br>
 		                ${this.title}
 		              </a>
+
 		            </h2>
 		            <p>${this.content}</p>
 		          </article>
